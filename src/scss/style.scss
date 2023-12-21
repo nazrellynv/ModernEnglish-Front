@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: PlusJakartaSans;
+}
+body{
+    width: 1440px;
+    background: #FFF;
+    margin: 0 auto!important;
+    
+}
+html{
+    background: black;
+}
+@import "./header";
+@import "./mini-header";
+@import "./footer";
+@import "./index";
+@import "./programs";
+@import "./about-us";
+@import "./gallery";
+@import "./form";
+@import "./contact-us";
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('../assets/fonts/PlusJakartaSans-Medium.ttf') format('woff2'),
+}
