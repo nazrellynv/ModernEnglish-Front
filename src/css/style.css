@@ -191,6 +191,11 @@ footer {
   gap: 72px;
   background: #6D7277;
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  footer {
+    display: none;
+  }
+}
 footer #footer-top {
   display: flex;
   width: 1188px;
@@ -282,6 +287,106 @@ footer #footer-bottom .footer-bar ul li {
   font-family: "PlusJakartaSans";
   src: url("../assets/fonts/PlusJakartaSans-Medium.ttf") format("woff2");
 }
+#mini-footer {
+  position: relative;
+  width: 390px;
+  background: #6D7277;
+  padding: 26px 16px;
+  display: none;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #mini-footer {
+    display: block;
+  }
+}
+#mini-footer .footer-top {
+  margin-bottom: 28px;
+}
+#mini-footer .footer-top ul {
+  text-align: center;
+  padding: 0;
+}
+#mini-footer .footer-top ul a {
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+}
+#mini-footer .footer-bottom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#mini-footer .footer-bottom .join-button {
+  color: #FFF;
+  border-radius: 32px;
+  background: #D70101;
+  display: flex;
+  width: 131px;
+  height: 40px;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  margin-bottom: 8px;
+}
+#mini-footer .footer-bottom .phone-number {
+  margin-bottom: 28.5px;
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+#mini-footer .footer-bottom .social-media {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+#mini-footer .footer-bottom .since {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.64);
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+}
+#mini-footer .contact {
+  position: absolute;
+  bottom: 30px;
+  left: 16px;
+  height: 116px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: -moz-max-content;
+  width: max-content;
+}
+#mini-footer .contact div {
+  display: flex;
+  width: 52px;
+  height: 52px;
+  padding: 4px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 28px;
+  border: 1px solid #FFF;
+}
+#mini-footer .contact .phone {
+  background: var(--Main-Color, #D70101);
+}
+#mini-footer .contact .whatsapp {
+  border: 1px solid #FFF;
+  background: var(--Main-Color, #61D76A);
+}
+
 #banner {
   background: url(../assets/images/unsplash_k33qWPtEfrM.png) center/cover no-repeat;
   background-position: unset;
@@ -355,7 +460,6 @@ footer #footer-bottom .footer-bar ul li {
   }
 }
 #banner #education-promo {
-  z-index: 1;
   font-size: 68px;
   font-style: normal;
   font-weight: 500;
@@ -480,6 +584,7 @@ footer #footer-bottom .footer-bar ul li {
 }
 
 #cards {
+  padding-bottom: 30px;
   margin-top: 100px;
   margin-left: 126px;
   margin-right: 126px;
@@ -489,13 +594,20 @@ footer #footer-bottom .footer-bar ul li {
     margin-top: 12px;
     margin-left: 16px;
     margin-right: 16px;
-    height: 428px;
   }
 }
 #cards .title-container {
   width: 1188px;
   height: 144px;
   margin-bottom: 40px;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #cards .title-container {
+    width: 358px;
+    height: 54px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+  }
 }
 #cards .title-container h1 {
   color: #D70101;
@@ -507,6 +619,7 @@ footer #footer-bottom .footer-bar ul li {
 }
 @media (min-width: 390px) and (max-width: 822px) {
   #cards .title-container h1 {
+    text-align: center;
     color: var(--Main-Color, #D70101);
     font-size: 32px;
     font-style: normal;
@@ -589,6 +702,12 @@ footer #footer-bottom .footer-bar ul li {
   padding: 24px 20px;
   box-sizing: border-box;
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #cards #card .information-card {
+    padding: 13.867px 16.504px;
+    height: 139px;
+  }
+}
 #cards #card .information-card .course-name {
   font-size: 24px;
   font-style: normal;
@@ -618,6 +737,8 @@ footer #footer-bottom .footer-bar ul li {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+    width: 277.333px;
+    height: 74.533px;
   }
 }
 #cards #card-2 {
@@ -683,6 +804,11 @@ footer #footer-bottom .footer-bar ul li {
   padding-right: 24px;
   margin: 54px 631px 91px 631px;
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  .more-courses {
+    display: none;
+  }
+}
 
 #graduates-section {
   background: #F7F7F7;
@@ -693,9 +819,9 @@ footer #footer-bottom .footer-bar ul li {
 @media (min-width: 390px) and (max-width: 822px) {
   #graduates-section {
     width: 390px;
-    height: -moz-max-content;
-    height: max-content;
+    height: 284px;
     padding: 24px 22px;
+    position: relative;
   }
 }
 #graduates-section #graduates-1 {
@@ -707,8 +833,8 @@ footer #footer-bottom .footer-bar ul li {
 }
 @media (min-width: 390px) and (max-width: 822px) {
   #graduates-section #graduates-1 {
-    margin: 0;
-    padding: 0;
+    margin: 88.09px 2.13px 88.09px 0px;
+    padding: 2.8px 3px 20px 1px;
     width: 151px;
     height: 100px;
   }
@@ -752,6 +878,15 @@ footer #footer-bottom .footer-bar ul li {
   padding: 113px 65px 153px 85px;
   margin: 23px 61px 264px 1032px;
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section #graduates-2 {
+    margin: 48px 2px 64px 250px;
+    padding: 35px 20px 44px 20px;
+    width: 118px;
+    height: 157px;
+    position: absolute;
+  }
+}
 #graduates-section #graduates-2 .graduates2-container {
   z-index: 1;
   position: relative;
@@ -766,11 +901,25 @@ footer #footer-bottom .footer-bar ul li {
   background: #FFF;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section #graduates-2 .graduates2-container {
+    width: 78px;
+    height: 78px;
+    z-index: 1;
+    position: relative;
+  }
+}
 #graduates-section #graduates-2 .graduates2-container img {
   position: absolute;
   width: 175%;
   top: -110px;
   left: -80px;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section #graduates-2 .graduates2-container img {
+    left: -30px;
+    top: -40px;
+  }
 }
 #graduates-section #graduates-3 {
   width: 466px;
@@ -778,6 +927,15 @@ footer #footer-bottom .footer-bar ul li {
   position: absolute;
   padding: 103px 57px 166px 58px;
   margin: 203px 538px 0 436px;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section #graduates-3 {
+    margin: 18px 32px 22px 98px;
+    padding: 25px 1.2px 25px 0px;
+    width: 147.188px;
+    height: 196.461px;
+    position: absolute;
+  }
 }
 #graduates-section #graduates-3 .graduates3-container {
   z-index: 1;
@@ -793,11 +951,24 @@ footer #footer-bottom .footer-bar ul li {
   background: #FFF;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section #graduates-3 .graduates3-container {
+    width: 146px;
+    height: 146px;
+  }
+}
 #graduates-section #graduates-3 .graduates3-container img {
   position: absolute;
   top: -97px;
   left: -45px;
   width: 130%;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section #graduates-3 .graduates3-container img {
+    top: -30px;
+    width: 101%;
+    left: -2px;
+  }
 }
 #graduates-section #graduates-4 {
   width: 621px;
@@ -887,6 +1058,35 @@ footer #footer-bottom .footer-bar ul li {
   padding-left: 24px;
   padding-right: 24px;
   margin-top: 48px;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .graduates-info .more-graduates {
+    display: none;
+  }
+}
+#graduates-section .see-more {
+  display: none;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .see-more {
+    display: block;
+    color: var(--Main-Color, #D70101);
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    border-radius: 32px;
+    border: 1px solid #D70101;
+    width: 97px;
+    height: 32px;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: transparent;
+    margin: 180px 145px 24px 130px;
+  }
 }
 #graduates-section .ellipse-1 {
   position: absolute;
@@ -1327,7 +1527,16 @@ footer #footer-bottom .footer-bar ul li {
   flex-direction: row;
   margin-bottom: 56px;
 }
-.background-image .image-container .image-container img {
+@media (min-width: 390px) and (max-width: 822px) {
+  .background-image .image-container {
+    display: none;
+  }
+}
+.background-image .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.background-image .image-container-2 img {
   width: 100%;
   height: 100%;
 }
@@ -1341,14 +1550,28 @@ footer #footer-bottom .footer-bar ul li {
   line-height: 150%;
   margin: 50px 126px 180px 126px;
 }
-#about-us-content #about-us {
+@media (min-width: 390px) and (max-width: 822px) {
+  #about-us-content {
+    width: 358px;
+    height: 693px;
+    font-size: 12px;
+    margin: 6px 16px 56px 16px;
+  }
+}
+
+#about-us {
   color: #D70101;
-  text-align: center;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
-  margin-bottom: 24px;
+  margin: auto;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #about-us {
+    width: 108px;
+    font-size: 24px;
+  }
 }
 
 span {
