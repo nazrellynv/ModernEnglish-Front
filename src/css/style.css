@@ -5,6 +5,7 @@
   text-decoration: none;
   list-style: none;
   font-family: PlusJakartaSans;
+  text-decoration: none !important;
 }
 
 body {
@@ -13,6 +14,11 @@ body {
   margin: 0 auto !important;
 }
 
+@media (min-width: 390px) and (max-width: 822px) {
+  body {
+    width: 390px;
+  }
+}
 html {
   background: black;
 }
@@ -85,6 +91,14 @@ html {
   height: 44px;
   padding: 10px;
 }
+#header #logo-nav #nav nav .nav-item .dropdwn {
+  cursor: pointer;
+  position: relative;
+}
+#header #logo-nav #nav nav .nav-item .dropdwn svg {
+  position: absolute;
+  top: 2px;
+}
 #header #logo-nav #nav nav .nav-item span {
   color: #000;
   font-family: PlusJakartaSans;
@@ -109,7 +123,7 @@ html {
 }
 #mini-header {
   display: none;
-  position: fixed;
+  position: sticky;
   padding: 0 16px;
   align-items: flex-start;
   background: #FFF;
@@ -164,6 +178,7 @@ html {
 
 @media (min-width: 390px) and (max-width: 822px) {
   #mini-header {
+    z-index: 1;
     display: block;
   }
 }
@@ -273,32 +288,56 @@ footer #footer-bottom .footer-bar ul li {
   background-size: cover;
   height: 628px;
   width: 1440px;
-  position: relative;
 }
 #banner .overlay {
+  /* display: flex;
+   flex-direction: row;*/
   padding-left: 126px;
   padding-top: 96px;
   padding-right: 551px;
-  z-index: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background: rgba(102, 102, 102, 0.5);
+  height: 628px;
+  width: 1440px;
+  position: relative;
 }
-#banner .overlay #overlay-image {
-  background-image: url(../assets/images/girl-with-notebooks.png);
-  width: 978px;
-  height: 598px;
+#banner .overlay .overlay-image .girl-with-notebooks {
   position: absolute;
   top: 30px;
-  bottom: 0;
   left: 411px;
   right: 51px;
-  background-size: cover;
+  bottom: 0;
+  width: 978px;
+  height: 598px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-#banner .overlay #education-promo {
+@media (min-width: 390px) and (max-width: 822px) {
+  #banner .overlay {
+    padding-left: 16px;
+    padding-top: 34px;
+    padding-right: 182px;
+    /*
+    display: flex;
+    flex-direction: row;*/
+    position: relative;
+    width: 390px;
+    height: 198px;
+  }
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #banner .girl-with-notebooks {
+    position: absolute;
+    top: 11.37px;
+    left: 14.62px;
+    right: 4.7px;
+    bottom: 0;
+    width: 371.216px;
+    height: 186.628px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+#banner #education-promo {
   z-index: 1;
   font-size: 68px;
   font-style: normal;
@@ -307,7 +346,23 @@ footer #footer-bottom .footer-bar ul li {
   width: 763px;
   color: white;
 }
-#banner .overlay #education-promo-2 {
+@media (min-width: 390px) and (max-width: 822px) {
+  #banner #education-promo {
+    /*
+    position: absolute;
+
+    left: 15px;
+    top: 34px;
+    */
+    width: 192px;
+    color: var(--Neutral-20, #F9F9F9);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 116%; /* 27.84px */
+  }
+}
+#banner #education-promo-2 {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -315,7 +370,12 @@ footer #footer-bottom .footer-bar ul li {
   color: #E0E0E0;
   margin-top: 24px;
 }
-#banner .overlay #education-promo-3 {
+@media (min-width: 390px) and (max-width: 822px) {
+  #banner #education-promo-2 {
+    display: none;
+  }
+}
+#banner #education-promo-3 {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -323,7 +383,12 @@ footer #footer-bottom .footer-bar ul li {
   color: #E0E0E0;
   margin-top: 8px;
 }
-#banner .overlay #search-container {
+@media (min-width: 390px) and (max-width: 822px) {
+  #banner #education-promo-3 {
+    display: none;
+  }
+}
+#banner #search-container {
   display: flex;
   width: 716px;
   height: 68px;
@@ -335,15 +400,25 @@ footer #footer-bottom .footer-bar ul li {
   justify-content: space-between;
   margin-top: 64px;
 }
-#banner .overlay #search-container a {
+#banner #search-container a {
   margin-right: 8px;
 }
-#banner .overlay #search-container input {
+#banner #search-container input {
   width: 428px;
   height: 24px;
   border-style: none;
 }
-#banner .overlay #search-container #circle {
+@media (min-width: 390px) and (max-width: 822px) {
+  #banner #search-container input {
+    position: absolute;
+    left: 0;
+    width: -moz-max-content;
+    width: max-content;
+    height: 24px;
+    left: 10px;
+  }
+}
+#banner #search-container #circle {
   width: 52px;
   height: 52px;
   background-color: #D70101;
@@ -353,12 +428,53 @@ footer #footer-bottom .footer-bar ul li {
   padding-top: 15px;
   padding-bottom: 13px;
 }
-#banner .overlay #search-container #circle .fa-magnifying-glass {
+#banner #search-container #circle .fa-magnifying-glass {
   width: 30px;
   height: 30px;
   color: white;
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #banner #search-container #circle .fa-magnifying-glass {
+    width: 10.37px;
+    height: 10.37px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 8px;
+    right: 12px;
+  }
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #banner #search-container #circle {
+    position: absolute;
+    right: 3.3px;
+    width: 21.57px;
+    height: 21.57px;
+  }
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #banner #search-container .course {
+    display: none;
+  }
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #banner #search-container {
+    margin: 0;
+    width: 206px;
+    height: 32px;
+    position: absolute;
+    left: 16px;
+    top: 130px;
+  }
+}
 
+@media (min-width: 390px) and (max-width: 822px) {
+  #banner {
+    width: 390px;
+    height: 198px;
+    flex-shrink: 0;
+    background-size: cover;
+  }
+}
 #cards {
   margin-top: 100px;
   margin-left: 126px;
@@ -376,6 +492,21 @@ footer #footer-bottom .footer-bar ul li {
   font-weight: 600;
   line-height: 150%;
   flex-shrink: 0;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #cards .title-container h1 {
+    color: var(--Main-Color, #D70101);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    padding: 17.53px 34px 17.53px 34px;
+  }
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #cards .title-container .content {
+    display: none;
+  }
 }
 #cards .title-container .content {
   height: 40px;
@@ -403,7 +534,17 @@ footer #footer-bottom .footer-bar ul li {
   font-weight: 600;
   line-height: 150%;
 }
-#cards #card {
+@media (min-width: 390px) and (max-width: 822px) {
+  #cards .title-container .category-container {
+    display: none;
+  }
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #cards .title-container {
+    margin-bottom: 12px;
+  }
+}
+#cards #card-1, #cards #card-2, #cards #card-3 {
   display: flex;
   flex-direction: column;
   width: 376px;
@@ -416,30 +557,30 @@ footer #footer-bottom .footer-bar ul li {
   border: 1px solid #e0dfdf;
   box-shadow: 0 8px 16px #f0eded;
 }
-#cards #card img {
-  width: 376px;
-  height: 212px;
-  border-radius: 0 0 -16px -16px;
-}
-#cards #card .image-2 {
+#cards #card-1 .image-2, #cards #card-2 .image-2, #cards #card-3 .image-2 {
   width: 376px;
   height: 212px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 16px 16px 0 0;
 }
-#cards #card .information-card {
+#cards #card-1 .information-card, #cards #card-2 .information-card, #cards #card-3 .information-card {
   padding: 24px 20px;
   box-sizing: border-box;
 }
-#cards #card .information-card .course-name {
+#cards #card-1 .information-card .course-name, #cards #card-2 .information-card .course-name, #cards #card-3 .information-card .course-name {
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 130%;
   margin-bottom: 20px;
 }
-#cards #card .information-card .course-information {
+@media (min-width: 390px) and (max-width: 822px) {
+  #cards #card-1 .information-card .course-name, #cards #card-2 .information-card .course-name, #cards #card-3 .information-card .course-name {
+    text-align: center;
+  }
+}
+#cards #card-1 .information-card .course-information, #cards #card-2 .information-card .course-information, #cards #card-3 .information-card .course-information {
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -447,7 +588,51 @@ footer #footer-bottom .footer-bar ul li {
   color: #7C7C7C;
   margin-bottom: 24px;
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #cards #card-1 .information-card .course-information, #cards #card-2 .information-card .course-information, #cards #card-3 .information-card .course-information {
+    text-align: center;
+  }
+}
+#cards #card-1 .array-down, #cards #card-2 .array-down, #cards #card-3 .array-down {
+  display: none;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #cards #card-1 .arrow-down, #cards #card-2 .arrow-down, #cards #card-3 .arrow-down {
+    display: block;
+    width: 40px;
+    height: 40px;
+    transform: rotate(90deg);
+    flex-shrink: 0;
+  }
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #cards #card-1 .information-card, #cards #card-2 .information-card, #cards #card-3 .information-card {
+    padding: 13.87px 16.5px 13.87px 16.5px;
+    box-sizing: border-box;
+    height: 139px;
+  }
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #cards #card-1 {
+    width: 310px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #cards #card-2, #cards #card-3 {
+    display: none;
+  }
+}
 
+@media (min-width: 390px) and (max-width: 822px) {
+  #cards {
+    width: 358px;
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
 .more-courses {
   border-radius: 32px;
   border: 1px solid #D70101;
@@ -477,15 +662,25 @@ footer #footer-bottom .footer-bar ul li {
   margin: 76px 282px 355px 679px;
   position: absolute;
 }
-#graduates-section #graduates-1 img {
+#graduates-section #graduates-1 .graduates1-container {
+  position: relative;
+  z-index: 1;
   width: 248px;
   height: 248px;
+  border-radius: 100%;
   border-radius: 203px;
   border: 3px solid #FFF;
   background: #FFF;
   -o-object-fit: cover;
      object-fit: cover;
+  overflow: hidden;
   box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+}
+#graduates-section #graduates-1 .graduates1-container img {
+  width: 195%;
+  position: absolute;
+  left: -130px;
+  top: -12px;
 }
 #graduates-section #graduates-2 {
   width: 347px;
@@ -494,16 +689,25 @@ footer #footer-bottom .footer-bar ul li {
   padding: 113px 65px 153px 85px;
   margin: 23px 61px 264px 1032px;
 }
-#graduates-section #graduates-2 img {
+#graduates-section #graduates-2 .graduates2-container {
+  z-index: 1;
+  position: relative;
   border-radius: 100%;
   width: 197px;
   height: 197px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 194px;
+  overflow: hidden;
   border: 3px solid #FFF;
   background: #FFF;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
-  -o-object-fit: cover;
-     object-fit: cover;
+}
+#graduates-section #graduates-2 .graduates2-container img {
+  position: absolute;
+  width: 175%;
+  top: -110px;
+  left: -80px;
 }
 #graduates-section #graduates-3 {
   width: 466px;
@@ -686,23 +890,18 @@ footer #footer-bottom .footer-bar ul li {
 }
 
 #students-opinion-section {
+  padding: 100px 0;
   height: 778px;
   background: #D70202;
 }
 #students-opinion-section #what-our-student-say {
+  margin-bottom: 64px;
   color: #FFF;
   text-align: center;
   font-size: 52px;
   font-style: normal;
   font-weight: 500;
   line-height: 110%;
-}
-#students-opinion-section .student-opinion {
-  width: 580px;
-  padding: 24px;
-  background-color: #FFF;
-  border-radius: 16px;
-  box-sizing: border-box;
 }
 #students-opinion-section .student-opinion .student-profile {
   display: flex;
@@ -1106,6 +1305,25 @@ span {
   padding: 10px 24px;
   border-style: none;
   margin: 64px 631px 111px 631px;
+}
+
+#review-slider-1 {
+  margin-bottom: 30px;
+}
+#review-slider-1 .owl-item {
+  width: 580px !important;
+  padding: 24px;
+  background-color: #FFF;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+#review-slider-2 .owl-item {
+  width: 580px !important;
+  padding: 24px;
+  background-color: #FFF;
+  border-radius: 16px;
+  box-sizing: border-box;
 }
 
 @font-face {
