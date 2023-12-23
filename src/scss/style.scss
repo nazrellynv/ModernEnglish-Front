@@ -5,6 +5,7 @@
     text-decoration: none;
     list-style: none;
     font-family: PlusJakartaSans;
+    text-decoration: none!important;
 }
 body{
     width: 1440px;
@@ -12,6 +13,11 @@ body{
     margin: 0 auto!important;
     
 }
+@media (min-width: 390px) and (max-width: 822px) {
+    body {
+      width: 390px;
+    }
+  }
 html{
     background: black;
 }
@@ -24,6 +30,7 @@ html{
 @import "./gallery";
 @import "./form";
 @import "./contact-us";
+@import "./owl";
 @font-face {
     font-family: 'PlusJakartaSans';
     src: url('../assets/fonts/PlusJakartaSans-Medium.ttf') format('woff2'),

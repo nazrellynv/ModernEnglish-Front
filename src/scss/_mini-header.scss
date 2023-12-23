@@ -1,6 +1,6 @@
 #mini-header{
     display: none;
-    position: fixed;
+    position: sticky;
     padding: 0 16px ;
     align-items: flex-start;
     background: #FFF;
@@ -55,6 +55,7 @@
 }
 @media (min-width: 390px) and (max-width: 822px) {
     #mini-header {
+        z-index: 1;
         display:block;
     }
 }
