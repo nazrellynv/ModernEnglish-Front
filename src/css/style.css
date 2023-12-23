@@ -289,6 +289,14 @@ footer #footer-bottom .footer-bar ul li {
   height: 628px;
   width: 1440px;
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #banner {
+    width: 390px;
+    height: 198px;
+    flex-shrink: 0;
+    background-size: cover;
+  }
+}
 #banner .overlay {
   /* display: flex;
    flex-direction: row;*/
@@ -300,7 +308,20 @@ footer #footer-bottom .footer-bar ul li {
   width: 1440px;
   position: relative;
 }
-#banner .overlay .overlay-image .girl-with-notebooks {
+@media (min-width: 390px) and (max-width: 822px) {
+  #banner .overlay {
+    padding-left: 16px;
+    padding-top: 34px;
+    padding-right: 172.85px;
+    /*
+    display: flex;
+    flex-direction: row;*/
+    position: relative;
+    width: 390px;
+    height: 198px;
+  }
+}
+#banner .overlay .overlay-image {
   position: absolute;
   top: 30px;
   left: 411px;
@@ -310,31 +331,27 @@ footer #footer-bottom .footer-bar ul li {
   height: 598px;
   -o-object-fit: cover;
      object-fit: cover;
+  overflow: hidden;
 }
 @media (min-width: 390px) and (max-width: 822px) {
-  #banner .overlay {
-    padding-left: 16px;
-    padding-top: 34px;
-    padding-right: 182px;
-    /*
-    display: flex;
-    flex-direction: row;*/
-    position: relative;
-    width: 390px;
-    height: 198px;
-  }
-}
-@media (min-width: 390px) and (max-width: 822px) {
-  #banner .girl-with-notebooks {
+  #banner .overlay .overlay-image {
     position: absolute;
     top: 11.37px;
     left: 14.62px;
-    right: 4.7px;
-    bottom: 0;
+    right: 4.17px;
     width: 371.216px;
-    height: 186.628px;
+    height: 247.628px;
     -o-object-fit: cover;
        object-fit: cover;
+    overflow: hidden;
+  }
+}
+#banner .overlay .overlay-image .girl-with-notebooks {
+  width: 100%;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #banner .overlay .overlay-image .girl-with-notebooks {
+    width: 81.5%;
   }
 }
 #banner #education-promo {
@@ -400,6 +417,16 @@ footer #footer-bottom .footer-bar ul li {
   justify-content: space-between;
   margin-top: 64px;
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #banner #search-container {
+    margin: 0;
+    width: 206px;
+    height: 32px;
+    position: absolute;
+    left: 16px;
+    top: 130px;
+  }
+}
 #banner #search-container a {
   margin-right: 8px;
 }
@@ -428,6 +455,14 @@ footer #footer-bottom .footer-bar ul li {
   padding-top: 15px;
   padding-bottom: 13px;
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #banner #search-container #circle {
+    position: absolute;
+    right: 3.3px;
+    width: 21.57px;
+    height: 21.57px;
+  }
+}
 #banner #search-container #circle .fa-magnifying-glass {
   width: 30px;
   height: 30px;
@@ -443,42 +478,19 @@ footer #footer-bottom .footer-bar ul li {
     right: 12px;
   }
 }
-@media (min-width: 390px) and (max-width: 822px) {
-  #banner #search-container #circle {
-    position: absolute;
-    right: 3.3px;
-    width: 21.57px;
-    height: 21.57px;
-  }
-}
-@media (min-width: 390px) and (max-width: 822px) {
-  #banner #search-container .course {
-    display: none;
-  }
-}
-@media (min-width: 390px) and (max-width: 822px) {
-  #banner #search-container {
-    margin: 0;
-    width: 206px;
-    height: 32px;
-    position: absolute;
-    left: 16px;
-    top: 130px;
-  }
-}
 
-@media (min-width: 390px) and (max-width: 822px) {
-  #banner {
-    width: 390px;
-    height: 198px;
-    flex-shrink: 0;
-    background-size: cover;
-  }
-}
 #cards {
   margin-top: 100px;
   margin-left: 126px;
   margin-right: 126px;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #cards {
+    margin-top: 12px;
+    margin-left: 16px;
+    margin-right: 16px;
+    height: 428px;
+  }
 }
 #cards .title-container {
   width: 1188px;
@@ -500,22 +512,28 @@ footer #footer-bottom .footer-bar ul li {
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
-    padding: 17.53px 34px 17.53px 34px;
+    width: 358px;
+    height: 54px;
   }
+}
+#cards .title-container .content {
+  height: 40px;
 }
 @media (min-width: 390px) and (max-width: 822px) {
   #cards .title-container .content {
     display: none;
   }
 }
-#cards .title-container .content {
-  height: 40px;
-}
 #cards .title-container .category-container {
   display: flex;
   flex-direction: row;
   gap: 14px;
   border-bottom: 2px solid #E0E0E0;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #cards .title-container .category-container {
+    display: none;
+  }
 }
 #cards .title-container .category-container .category-1 {
   color: #1C1C1C;
@@ -534,17 +552,7 @@ footer #footer-bottom .footer-bar ul li {
   font-weight: 600;
   line-height: 150%;
 }
-@media (min-width: 390px) and (max-width: 822px) {
-  #cards .title-container .category-container {
-    display: none;
-  }
-}
-@media (min-width: 390px) and (max-width: 822px) {
-  #cards .title-container {
-    margin-bottom: 12px;
-  }
-}
-#cards #card-1, #cards #card-2, #cards #card-3 {
+#cards #card {
   display: flex;
   flex-direction: column;
   width: 376px;
@@ -557,18 +565,31 @@ footer #footer-bottom .footer-bar ul li {
   border: 1px solid #e0dfdf;
   box-shadow: 0 8px 16px #f0eded;
 }
-#cards #card-1 .image-2, #cards #card-2 .image-2, #cards #card-3 .image-2 {
+@media (min-width: 390px) and (max-width: 822px) {
+  #cards #card {
+    display: none;
+  }
+}
+#cards #card .image-2 {
   width: 376px;
   height: 212px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 16px 16px 0 0;
 }
-#cards #card-1 .information-card, #cards #card-2 .information-card, #cards #card-3 .information-card {
+@media (min-width: 390px) and (max-width: 822px) {
+  #cards #card .image-2 {
+    width: 310px;
+    height: 175px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+#cards #card .information-card {
   padding: 24px 20px;
   box-sizing: border-box;
 }
-#cards #card-1 .information-card .course-name, #cards #card-2 .information-card .course-name, #cards #card-3 .information-card .course-name {
+#cards #card .information-card .course-name {
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -576,11 +597,12 @@ footer #footer-bottom .footer-bar ul li {
   margin-bottom: 20px;
 }
 @media (min-width: 390px) and (max-width: 822px) {
-  #cards #card-1 .information-card .course-name, #cards #card-2 .information-card .course-name, #cards #card-3 .information-card .course-name {
+  #cards #card .information-card .course-name {
     text-align: center;
+    margin-bottom: 10.13px;
   }
 }
-#cards #card-1 .information-card .course-information, #cards #card-2 .information-card .course-information, #cards #card-3 .information-card .course-information {
+#cards #card .information-card .course-information {
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -589,50 +611,63 @@ footer #footer-bottom .footer-bar ul li {
   margin-bottom: 24px;
 }
 @media (min-width: 390px) and (max-width: 822px) {
-  #cards #card-1 .information-card .course-information, #cards #card-2 .information-card .course-information, #cards #card-3 .information-card .course-information {
+  #cards #card .information-card .course-information {
     text-align: center;
+    color: var(--Neutral-70, #7C7C7C);
+    font-size: 12.378px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
   }
 }
-#cards #card-1 .array-down, #cards #card-2 .array-down, #cards #card-3 .array-down {
+#cards #card-2 {
   display: none;
+  margin: 0 auto;
+  width: 310px;
+  height: 314px;
+  border-radius: 16px;
+  border-right: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+  border-left: 1px solid #E0E0E0;
+  border-top-style: none;
+  border: 1px solid #e0dfdf;
+  box-shadow: 0 8px 16px #f0eded;
 }
 @media (min-width: 390px) and (max-width: 822px) {
-  #cards #card-1 .arrow-down, #cards #card-2 .arrow-down, #cards #card-3 .arrow-down {
+  #cards #card-2 {
     display: block;
-    width: 40px;
-    height: 40px;
-    transform: rotate(90deg);
-    flex-shrink: 0;
   }
 }
-@media (min-width: 390px) and (max-width: 822px) {
-  #cards #card-1 .information-card, #cards #card-2 .information-card, #cards #card-3 .information-card {
-    padding: 13.87px 16.5px 13.87px 16.5px;
-    box-sizing: border-box;
-    height: 139px;
-  }
+#cards #card-2 .image-2 {
+  border-radius: 16px 16px 0 0;
+  width: 310px;
+  height: 175px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-@media (min-width: 390px) and (max-width: 822px) {
-  #cards #card-1 {
-    width: 310px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
+#cards #card-2 .information-card {
+  width: 310px;
+  padding: 13.867px 16.504px;
+  box-sizing: border-box;
+  height: 139px;
 }
-@media (min-width: 390px) and (max-width: 822px) {
-  #cards #card-2, #cards #card-3 {
-    display: none;
-  }
+#cards #card-2 .course-name {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  text-align: center;
+  margin-bottom: 10.13px;
+}
+#cards #card-2 .course-information {
+  text-align: center;
+  color: var(--Neutral-70, #7C7C7C);
+  font-size: 12.378px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
 }
 
-@media (min-width: 390px) and (max-width: 822px) {
-  #cards {
-    width: 358px;
-    margin-top: 24px;
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-}
 .more-courses {
   border-radius: 32px;
   border: 1px solid #D70101;
@@ -655,12 +690,28 @@ footer #footer-bottom .footer-bar ul li {
   height: 750px;
   position: relative;
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section {
+    width: 390px;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 24px 22px;
+  }
+}
 #graduates-section #graduates-1 {
   width: 479px;
   height: 319px;
   padding: 9px 103px 62px 128px;
   margin: 76px 282px 355px 679px;
   position: absolute;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section #graduates-1 {
+    margin: 0;
+    padding: 0;
+    width: 151px;
+    height: 100px;
+  }
 }
 #graduates-section #graduates-1 .graduates1-container {
   position: relative;
@@ -676,11 +727,23 @@ footer #footer-bottom .footer-bar ul li {
   overflow: hidden;
   box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section #graduates-1 .graduates1-container {
+    width: 70px;
+    height: 70px;
+  }
+}
 #graduates-section #graduates-1 .graduates1-container img {
   width: 195%;
   position: absolute;
   left: -130px;
   top: -12px;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section #graduates-1 .graduates1-container img {
+    left: -35px;
+    top: -3px;
+  }
 }
 #graduates-section #graduates-2 {
   width: 347px;
@@ -743,6 +806,11 @@ footer #footer-bottom .footer-bar ul li {
   padding: 13px 170px 97px 147px;
   margin: 349px 48px 13px 771px;
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section #graduates-4 {
+    display: none;
+  }
+}
 #graduates-section #graduates-4 .graduates4-container {
   z-index: 1;
   position: relative;
@@ -768,12 +836,28 @@ footer #footer-bottom .footer-bar ul li {
   left: 126px;
   top: 100px;
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .graduates-info {
+    position: unset;
+  }
+}
 #graduates-section .graduates-info .p-1 {
   font-size: 52px;
   font-style: normal;
   font-weight: 600;
   line-height: 110%;
   color: #D70101;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .graduates-info .p-1 {
+    margin-bottom: 18px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    padding: 0;
+    text-align: center;
+  }
 }
 #graduates-section .graduates-info .p-2 {
   font-size: 18px;
@@ -782,6 +866,11 @@ footer #footer-bottom .footer-bar ul li {
   line-height: 135%;
   color: #D70101;
   margin-top: 24px;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .graduates-info .p-2 {
+    display: none;
+  }
 }
 #graduates-section .graduates-info .more-graduates {
   border-radius: 32px;
@@ -803,51 +892,115 @@ footer #footer-bottom .footer-bar ul li {
   position: absolute;
   margin: 103px 619px 451px 625px;
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .ellipse-1 {
+    display: none;
+  }
+}
 #graduates-section .ellipse-2 {
   position: absolute;
   margin: 26px 191px 1151px 626px;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .ellipse-2 {
+    display: none;
+  }
 }
 #graduates-section .ellipse-3 {
   position: absolute;
   margin: 367px 1233px 272px 96px;
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .ellipse-3 {
+    display: none;
+  }
+}
 #graduates-section .ellipse-4 {
   position: absolute;
   margin: 580px 1261px 26px 17px;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .ellipse-4 {
+    display: none;
+  }
 }
 #graduates-section .ellipse-5 {
   position: absolute;
   margin: 432px 884px 70px 308px;
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .ellipse-5 {
+    display: none;
+  }
+}
 #graduates-section .ellipse-6 {
   position: absolute;
   margin: 580px 426px 21px 865px;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .ellipse-6 {
+    display: none;
+  }
 }
 #graduates-section .ellipse-7 {
   position: absolute;
   margin: 360px 471px 321px 900px;
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .ellipse-7 {
+    display: none;
+  }
+}
 #graduates-section .ellipse-8 {
   position: absolute;
   margin: 349px 94px 290px 1235px;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .ellipse-8 {
+    display: none;
+  }
 }
 #graduates-section .ellipse-9 {
   position: absolute;
   margin: 580px 39px 40px 1271px;
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .ellipse-9 {
+    display: none;
+  }
+}
 #graduates-section .ellipse-10 {
   position: absolute;
   margin: 286px 306px 407px 1077px;
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .ellipse-10 {
+    display: none;
+  }
+}
 #graduates-section .ellipse-11 {
   position: absolute;
   margin: 243px 943px 438px 428px;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .ellipse-11 {
+    display: none;
+  }
 }
 
 #course-selection-section {
   width: 1140px;
   height: 560px;
   padding-top: 160px;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #course-selection-section {
+    width: 390px;
+    padding: 48px 16px;
+    height: -moz-max-content;
+    height: max-content;
+    display: grid;
+  }
 }
 #course-selection-section #course-selection-message {
   color: #000;
@@ -861,6 +1014,18 @@ footer #footer-bottom .footer-bar ul li {
   margin-right: 227px;
   margin-bottom: 32px;
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #course-selection-section #course-selection-message {
+    width: 358px;
+    margin: 0;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    margin-bottom: 24px;
+  }
+}
 #course-selection-section #course-selection-message-2 {
   color: #000;
   text-align: center;
@@ -872,6 +1037,11 @@ footer #footer-bottom .footer-bar ul li {
   margin-right: 126px;
   width: 1188px;
   margin-bottom: 66px;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #course-selection-section #course-selection-message-2 {
+    display: none;
+  }
 }
 #course-selection-section #contact-us-button-2 {
   width: 178px;
@@ -888,11 +1058,24 @@ footer #footer-bottom .footer-bar ul li {
   font-weight: 600;
   line-height: 24px;
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #course-selection-section #contact-us-button-2 {
+    margin: 0 auto;
+  }
+}
 
 #students-opinion-section {
   padding: 100px 0;
   height: 778px;
   background: #D70202;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #students-opinion-section {
+    width: 390px;
+    padding: 24px;
+    height: -moz-max-content;
+    height: max-content;
+  }
 }
 #students-opinion-section #what-our-student-say {
   margin-bottom: 64px;
@@ -902,6 +1085,14 @@ footer #footer-bottom .footer-bar ul li {
   font-style: normal;
   font-weight: 500;
   line-height: 110%;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #students-opinion-section #what-our-student-say {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 26.4px */
+  }
 }
 #students-opinion-section .student-opinion .student-profile {
   display: flex;
@@ -945,6 +1136,12 @@ footer #footer-bottom .footer-bar ul li {
   height: 664px;
   display: flex;
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #join-us-section {
+    height: 207px;
+    width: 390px;
+  }
+}
 #join-us-section .join-us-picture {
   margin-top: 128px;
   width: 612px;
@@ -952,9 +1149,21 @@ footer #footer-bottom .footer-bar ul li {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #join-us-section .join-us-picture {
+    display: none;
+  }
+}
 #join-us-section .join-us-content {
   margin-left: 126px;
   margin-top: 205px;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #join-us-section .join-us-content {
+    margin: 0;
+    padding: 48px 81px;
+    display: grid;
+  }
 }
 #join-us-section .join-us-content .career-opp {
   color: #D70101;
@@ -964,6 +1173,15 @@ footer #footer-bottom .footer-bar ul li {
   line-height: 110%;
   margin-bottom: 36.37px;
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #join-us-section .join-us-content .career-opp {
+    margin-bottom: 16px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 24.2px */
+  }
+}
 #join-us-section .join-us-content .join-us-content-1 {
   color: rgba(0, 0, 0, 0.74);
   font-size: 36px;
@@ -971,6 +1189,14 @@ footer #footer-bottom .footer-bar ul li {
   font-weight: 600;
   line-height: 110%;
   margin-bottom: 16px;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #join-us-section .join-us-content .join-us-content-1 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+  }
 }
 #join-us-section .join-us-content .join-us-content-2 {
   color: rgba(0, 0, 0, 0.66);
@@ -980,6 +1206,11 @@ footer #footer-bottom .footer-bar ul li {
   line-height: 135%;
   width: 513px;
   margin-bottom: 40.47px;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #join-us-section .join-us-content .join-us-content-2 {
+    display: none;
+  }
 }
 #join-us-section .join-us-content .join-us-button {
   color: #D70101;
@@ -992,6 +1223,7 @@ footer #footer-bottom .footer-bar ul li {
   padding: 10px 16px;
   background-color: transparent;
   width: 108.276px;
+  margin: 0 auto;
 }
 
 #programs-main {
@@ -1318,12 +1550,80 @@ span {
   box-sizing: border-box;
 }
 
+@media (min-width: 390px) and (max-width: 822px) {
+  #review-slider-1 {
+    display: none;
+  }
+}
 #review-slider-2 .owl-item {
   width: 580px !important;
   padding: 24px;
   background-color: #FFF;
   border-radius: 16px;
   box-sizing: border-box;
+}
+
+@media (min-width: 390px) and (max-width: 822px) {
+  #review-slider-2 {
+    display: none;
+  }
+}
+#mini-review-slider {
+  display: none;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #mini-review-slider {
+    display: block;
+  }
+}
+#mini-review-slider .owl-item .review-item {
+  width: 314px;
+  padding: 24px;
+  background-color: #FFF;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+#mini-review-slider .owl-item .review-item .review-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+#mini-review-slider .owl-item .review-item .review-head .user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#mini-review-slider .owl-item .review-item .review-head .user-info .profile-photo {
+  width: 48px;
+  height: 48px;
+  border-radius: 100px;
+  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-right: 8px;
+}
+#mini-review-slider .owl-item .review-item .review-head .user-info .profile-name h6 {
+  margin: 0;
+  font-size: 12px;
+  font-style: normal;
+}
+#mini-review-slider .owl-item .review-item .review-head .user-info .profile-name .name {
+  color: var(--Neutral-90, #252525);
+  font-weight: 500;
+  line-height: 150%; /* 18px */
+}
+#mini-review-slider .owl-item .review-item .review-head .user-info .profile-name .job {
+  color: var(--Neutral-70, #7C7C7C);
+  text-align: center;
+  font-weight: 400;
+  line-height: 155%; /* 18.6px */
+}
+#mini-review-slider .owl-item .review-item .review-body {
+  color: #838383;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 160% */
 }
 
 @font-face {
