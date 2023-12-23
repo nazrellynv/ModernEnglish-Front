@@ -13,7 +13,7 @@
       }
 
     .overlay {
-        
+        position: relative;
        /* display: flex;
         flex-direction: row;*/
         padding-left: 126px;
@@ -49,14 +49,10 @@
             object-fit: cover;
             overflow: hidden;
             @media (min-width: 390px) and (max-width: 822px) {
-                position: absolute;
-                top: 11.37px;
-                left: 14.62px;
-                right: 4.17px;
                 width: 371.216px;
                 height: 247.628px;
-                object-fit: cover;
-                overflow: hidden;
+                left: 80px;
+                top: 11px;
             }
 
 
@@ -535,6 +531,8 @@
             padding: 2.8px 3px 20px 1px;
             width: 151px;
             height: 100px;
+            z-index: 0;
+
 
         }
 
@@ -580,6 +578,7 @@
             width: 118px;
             height: 157px;
             position: absolute;
+            z-index: 0;
 
         }
         .graduates2-container {
@@ -628,6 +627,8 @@
             width: 147.188px;
             height: 196.461px;
             position: absolute;
+            z-index: 0;
+
 
         }
         .graduates3-container{
