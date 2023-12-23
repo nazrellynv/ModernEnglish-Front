@@ -8,6 +8,11 @@
       box-sizing: border-box;
   }
 }
+@media (min-width: 390px) and (max-width: 822px) {
+  #review-slider-1 {
+    display: none;
+  }
+}
 #review-slider-2{
   .owl-item{
       width: 580px!important;
@@ -15,5 +20,74 @@
       background-color: #FFF;
       border-radius: 16px;
       box-sizing: border-box;
+  }
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #review-slider-2 {
+    display: none;
+  }
+}
+
+#mini-review-slider{
+  display: none;
+  @media (min-width: 390px) and (max-width: 822px) {
+    display: block;
+  }
+  .owl-item{
+    .review-item{
+        width: 314px;
+        padding: 24px;
+        background-color: #FFF;
+        border-radius: 16px;
+        box-sizing: border-box;
+        .review-head{
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 8px;
+          .user-info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .profile-photo{
+              width: 48px;
+              height: 48px;
+              border-radius: 100px;
+              background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+              overflow: hidden;
+              flex-shrink: 0;
+              margin-right: 8px;
+              img{
+              }
+            }
+            .profile-name{
+              h6{
+                margin: 0;
+                font-size: 12px;
+                font-style: normal;
+              }
+              .name{
+                color: var(--Neutral-90, #252525);
+                font-weight: 500;
+                line-height: 150%; /* 18px */
+              }
+              .job{
+                color: var(--Neutral-70, #7C7C7C);
+                text-align: center;
+                font-weight: 400;
+                line-height: 155%; /* 18.6px */
+              }
+            }
+          }
+          .quotes{
+          }
+        }
+        .review-body{
+          color: #838383;
+          font-size: 10px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 16px; /* 160% */
+        }
+      }
   }
 }

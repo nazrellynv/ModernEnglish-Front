@@ -210,8 +210,10 @@
                     <div class="category-2">Online Courses</div>
                 </div>
             </div>
-            <div style="display: flex; justify-content: space-between;">
-                <div id="card-1">
+            <!-- burada justify-content-center olacaq -->
+            <div style="display: flex; justify-content: space-between; ">
+           
+                <div id="card">
                     <div><img class="image-2" src="src/assets/images/1dc9d0eba6873c6f3e61ebe843a977e9.jpg"></div>
                     <div class="information-card">
                         <p class="course-name">General English</p>
@@ -220,12 +222,9 @@
                             listening, reading and writing to improve confidence and increase fluency
                         </p>
                     </div>
-                    <svg  class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                        <path d="M26.768 4.09012C27.2367 4.55894 27.5 5.19471 27.5 5.85762C27.5 6.52053 27.2367 7.1563 26.768 7.62512L14.393 20.0001L26.768 32.3751C27.2234 32.8466 27.4754 33.4781 27.4697 34.1336C27.464 34.7891 27.2011 35.4161 26.7376 35.8797C26.2741 36.3432 25.647 36.6061 24.9915 36.6118C24.336 36.6175 23.7045 36.3655 23.233 35.9101L9.09053 21.7676C8.62185 21.2988 8.35857 20.663 8.35857 20.0001C8.35857 19.3372 8.62185 18.7014 9.09053 18.2326L23.233 4.09012C23.7019 3.62144 24.3376 3.35815 25.0005 3.35815C25.6634 3.35815 26.2992 3.62144 26.768 4.09012Z" fill="#D7D6D6"/>
-                    </svg>
 
                 </div>
-                <div id="card-2">
+                <div id="card">
                     <div><img class="image-2" src="src/assets/images/2c6f6606fedd3d232df8b698b3758545.jpg"></div>
                     <div class="information-card">
                         <p class="course-name">IELTS</p>
@@ -238,7 +237,7 @@
                     </div>
 
                 </div>
-                <div id="card-3">
+                <div id="card">
                     <div><img class="image-2" src="src/assets/images/0b80b8cb525388d0d86c876f3a895b2f.jpg"></div>
                     <div class="information-card">
                         <p class="course-name">English for Kids</p>
@@ -253,31 +252,42 @@
 
                 </div>
             </div>
+            <div id="card-2">
+                <div><img class="image-2" src="src/assets/images/1dc9d0eba6873c6f3e61ebe843a977e9.jpg"></div>
+                <div class="information-card">
+                    <p class="course-name">General English</p>
+                    <p class="course-information">
+                        General and intensive English courses focus on the core skills of speaking,
+                        listening, reading and writing to improve confidence and increase fluency
+                    </p>
+                </div>
+            </div>
+           </div>
         </div>
         <button class="more-courses">More Courses</button>
     </section>
     <section id="graduates-section">
-
-        <div id="graduates-1">
-            <div class="graduates1-container">
-                <img src="src/assets/images/graduates1.jpg">
+            <div id="graduates-1">
+                <div class="graduates1-container">
+                    <img src="src/assets/images/graduates1.jpg">
+                </div>
             </div>
-        </div>
-        <div id="graduates-2">
-            <div class="graduates2-container">
-                <img src="src/assets/images/graduates2.jpg">
+            <div id="graduates-2">
+                <div class="graduates2-container">
+                    <img src="src/assets/images/graduates2.jpg">
+                </div>
             </div>
-        </div>
-        <div id="graduates-3">
-            <div class="graduates3-container">
-                <img src="src/assets/images/graduates3.jpg">
+            <div id="graduates-3">
+                <div class="graduates3-container">
+                    <img src="src/assets/images/graduates3.jpg">
+                </div>
             </div>
-        </div>
-        <div id="graduates-4">
-            <div class="graduates4-container">
-                <img src="src/assets/images/graduates4.jpg">
+            <div id="graduates-4">
+                <div class="graduates4-container">
+                    <img src="src/assets/images/graduates4.jpg">
+                </div>
             </div>
-        </div>
+      
         
             <div class="ellipse-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="196" height="196" viewBox="0 0 196 196" fill="none">
@@ -357,13 +367,14 @@
                         fill="white" fill-opacity="0.34" />
                 </svg>
             </div>
-        
-
+    
         <div class="graduates-info">
             <p class="p-1">Meet Our Graduates</p>
             <p class="p-2">Meet our recently graduated students.</p>
             <button class="more-graduates">More Graduates</button>
         </div>
+
+        <button class="see-more">See more</button>
 
 
     </section>
@@ -909,7 +920,27 @@
                 </div>
             </div>
         </div>
-
+        <div id="mini-review-slider" class="owl-carousel owl-theme">
+            <div class="review-item">
+                <div class="review-head">
+                    <div class="user-info">
+                        <div class="profile-photo">
+                            <img src="./src/assets/images/ac92cae7d6421ecdb4d53f048fd5061e.jpg" alt="">
+                        </div>
+                        <div class="profile-name">
+                            <h6 class="name">Samir Aliyev</h6>
+                            <h6 class="job">Lorem, ipsum dolor.</h6>
+                        </div>
+                    </div>
+                    <div class="quotes">
+                        <img src="./src/assets/images/Quote.png" alt="">
+                    </div>
+                </div>
+                <div class="review-body">
+                    I have always relied on EdTech to help me understand my studies. I can always count on him to get me through difficult subjects. with edtech my learning is easier without any obstacles.
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="join-us-section">
@@ -1013,6 +1044,47 @@
                         <li>Contact Us</li>
                     </a>
                 </ul>
+            </div>
+        </div>
+    </footer>
+    <footer id="mini-footer">
+        <div class="footer-top">
+            <ul>
+                <li>
+                    <a href="">About Us</a>
+                </li>
+                <li>
+                    <a href="">Courses</a>
+                </li>
+                <li>
+                    <a href="">Career</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <a class="join-button" href="">
+                Contact Us
+            </a>
+            <p class="phone-number">+994 (55) 359 38 55</p>
+            <div class="social-media">
+                <a href="">
+                    <img src="./src/assets/images/mingcute_whatsapp-line.png" alt="">
+                </a>
+                <a href="" style="margin: 0 16px;">
+                    <img src="./src/assets/images/Group.png" alt="">
+                </a>
+                <a href="">
+                    <img src="./src/assets/images/Vector.png" alt="">
+                </a>
+            </div>
+            <p class="since">2013-2023 Modern English EC</p>
+        </div>
+        <div class="contact">
+            <div class="phone">
+                <img src="./src/assets/images/Vector-phone.png" alt="">
+            </div>
+            <div class="whatsapp">
+                <img src="./src/assets/images/logos_whatsapp-icon.png" alt="">
             </div>
         </div>
     </footer>

@@ -6,6 +6,9 @@ footer{
     align-items: flex-start;
     gap: 72px;
     background: #6D7277;
+    @media (min-width: 390px) and (max-width: 822px){
+        display: none;
+    }
     #footer-top{
         display: flex;
         width: 1188px;
