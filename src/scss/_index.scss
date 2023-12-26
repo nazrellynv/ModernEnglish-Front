@@ -104,10 +104,11 @@
         #education-promo-2 {
             font-size: 20px;
             font-style: normal;
-            font-weight: 400;
+            font-weight: 200;
             line-height: 130%;
             color: #E0E0E0;
             margin-top: 24px;
+
             @media (min-width: 390px) and (max-width: 822px) {
                   display: none;
                 
@@ -122,7 +123,8 @@
             font-weight: 400;
             line-height: 150%; 
             color: #E0E0E0;
-            margin-top: 8px;
+            margin-top: 16px;
+
             @media (min-width: 390px) and (max-width: 822px) {
                   display: none;
               }
@@ -169,6 +171,9 @@
                     
                 }
             }
+            input::placeholder {
+                color: #B6B5B5;
+              }
             
             #circle {
                 width: 52px;
@@ -409,19 +414,20 @@
     
      #card-2 {
         display: none;  
-        margin: 0 auto;
-        width: 310px;
-        height: 314px;
-        border-radius: 16px;
-        border-right: 1px solid  #E0E0E0;
-        border-bottom: 1px solid #E0E0E0;
-        border-left: 1px solid  #E0E0E0;
-        border-top-style: none;
        
-        border: 1px solid #e0dfdf;
-        box-shadow: 0 8px 16px #f0eded;
         @media (min-width: 390px) and (max-width: 822px) {
           display: block;
+          margin: 0 auto;
+          width: 310px;
+          height: 314px;
+          border-radius: 16px;
+          border-right: 1px solid  #E0E0E0;
+          border-bottom: 1px solid #E0E0E0;
+          border-left: 1px solid  #E0E0E0;
+          border-top-style: none;
+         
+          border: 1px solid #e0dfdf;
+          box-shadow: 0 8px 16px #f0eded;
          }
 
         .image-2 {
@@ -471,6 +477,7 @@
         
       }
          
+         
        
 
  }
@@ -499,7 +506,7 @@
     background-color: transparent;
     padding-left: 24px;
     padding-right: 24px; 
-    margin: 54px 631px 91px 631px;
+    margin: 30px 631px 91px 631px;
     @media (min-width: 390px) and (max-width: 822px){
         display: none;
     }
@@ -938,10 +945,66 @@
     padding: 100px 0;
     height: 778px;
     background: #D70202;
+    position: relative;
     @media (min-width: 390px) and (max-width: 822px){
         width: 390px;
         padding: 24px;
         height: max-content;
+    }
+    .line {
+        position: absolute;
+        @media (min-width: 390px) and (max-width: 822px){
+            display: none;
+        }
+
+     }
+    .line-1 {
+        width: 452.28px;
+        height: 250.474px;
+        transform: rotate(313.053deg);
+        left: 95.89px;
+        top: -38px;
+    }
+    .paper-plane-1 {
+        transform: rotate(360.053deg);
+        left: 39.47px;
+        width: 45.482px;
+        height: 45.482px;
+        top: 135.24px;
+
+
+    }
+    .paper-plane-2 {
+        transform: rotate(417.053deg);
+        left: 1086px;
+        width: 45.482px;
+        height: 45.482px;
+        top: 7px;
+
+
+    }
+    .plane {
+        position: absolute;
+        @media (min-width: 390px) and (max-width: 822px){
+            display: none;
+        }
+    }
+    .line-2 {
+        width: 452.28px;
+        height: 250.474px;
+        transform: rotate(7.698deg);
+        left: 1088px;
+        bottom: 455.1px;
+      
+
+    }
+    .line-3 {
+        width: 452.28px;
+        height: 250.474px;
+        transform: rotate(11.698deg);
+        left: 658.28px;
+        bottom: -74px;
+
     }
     #what-our-student-say {
         margin-bottom: 64px;

@@ -50,3 +50,99 @@ $('#review-slider-1').owlCarousel({
           }
       }
   })
+
+ 
+
+   
+
+
+  $('#mini-card-slider').owlCarousel({
+
+
+    loop:true,
+    margin:40,
+    nav: true,
+    navText: false,
+    dots: false,
+    center:false,
+    autoWidth:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:3
+        }
+    }
+  
+})
+  $('#mini-card-slider-2').owlCarousel({
+
+
+    loop:true,
+    margin:40,
+    nav: true,
+    navText: false,
+    dots: false,
+    center:false,
+    autoWidth:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:3
+        }
+    }
+  
+})
+$('#mini-card-slider-3').owlCarousel({
+
+
+    loop:true,
+    margin:40,
+    nav: true,
+    navText: false,
+    dots: false,
+    center:false,
+    autoWidth:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:3
+        }
+    }
+  
+})
+  
+
+$('#mini-gallery-slider').owlCarousel({
+    loop:true,
+    margin:25,
+    nav: false,
+    dots: false,
+    center:true,
+    autoWidth:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:5
+        }
+    }
+})
