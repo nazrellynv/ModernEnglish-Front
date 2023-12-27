@@ -137,7 +137,7 @@
             <div class="image-container-2">
                 <img src="src/assets/images/girl.jpg">
             </div>
-            <div class="image-container">
+            <div class="image-container-3">
                 <img class="rectangle-2" src="src/assets/images/Rectangle 493 (1).png">
             </div>
           </div>
@@ -186,10 +186,15 @@
             </div>
             <div>
                 <div style="display: flex; gap: 4px;">
-                    <label class="form-components" type="file">Please attach your CV</label>
+                    <label class="form-components" for="fileInput" >Please attach your CV</label>
                     <img class="little-red-star" src="src/assets/images/Frame 14691.png">
                 </div>
-              <input class="choose-file" type="file" id="file" placeholder="Choose file">
+                <div class="file-input-container">
+                    <input type="file" id="fileInput" class="inputfile" />
+                    <label class="fileInput" for="fileInput">
+                        <span>Choose File</span>
+                    </label>
+                </div>
             </div>
             <button class="submit-button">Submit Application</button>
             <button class="send-button-2">Send</button>

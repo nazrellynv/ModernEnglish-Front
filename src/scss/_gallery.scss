@@ -13,11 +13,9 @@
 
 
   .title-container {
-    width: 1188px;
     height: 144px;
     margin-bottom: 40px;
     @media (min-width: 390px) and (max-width: 822px) {
-      width: 133px;
       height: 33px;
       margin-bottom: 42px;
 
@@ -48,7 +46,7 @@
       flex-shrink: 0;
       @media (min-width: 390px) and (max-width: 822px) {
         font-size: 24px;
-        margin-left: 138px;
+        text-align: center;
      
         
       }
