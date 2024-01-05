@@ -432,11 +432,9 @@ footer #footer-bottom .footer-bar ul li {
 }
 #banner .overlay .overlay-image {
   position: absolute;
-  top: 30px;
-  left: 411px;
-  right: 51px;
+  right: 50px;
   bottom: 0;
-  width: 978px;
+  width: 475px;
   height: 598px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -444,10 +442,11 @@ footer #footer-bottom .footer-bar ul li {
 }
 @media (min-width: 390px) and (max-width: 822px) {
   #banner .overlay .overlay-image {
-    width: 371.216px;
+    width: 181.216px;
     height: 247.628px;
-    left: 80px;
+    left: 246px;
     top: 11px;
+    overflow: hidden;
   }
 }
 #banner .overlay .overlay-image .girl-with-notebooks {
@@ -530,8 +529,13 @@ footer #footer-bottom .footer-bar ul li {
     top: 130px;
   }
 }
-#banner #search-container a {
-  margin-right: 8px;
+#banner #search-container .custom-btn-secondary {
+  border: none;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #banner #search-container .custom-btn-secondary {
+    display: none;
+  }
 }
 #banner #search-container input {
   width: 428px;

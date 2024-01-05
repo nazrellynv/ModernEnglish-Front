@@ -40,19 +40,18 @@
         
         .overlay-image {
             position: absolute;
-            top: 30px;
-            left: 411px;
-            right: 51px;
+            right: 50px;
             bottom: 0;
-            width: 978px ;
+            width: 475px;
             height: 598px;
             object-fit: cover;
             overflow: hidden;
             @media (min-width: 390px) and (max-width: 822px) {
-                width: 371.216px;
+                width: 181.216px;
                 height: 247.628px;
-                left: 80px;
+                left: 246px;
                 top: 11px;
+                overflow: hidden;
             }
 
 
@@ -153,10 +152,13 @@
                 top: 130px;
                 
             }
-             a {
-                margin-right: 8px;
-            }
-    
+       
+             .custom-btn-secondary {
+                border: none;
+                @media (min-width: 390px) and (max-width: 822px) {
+                 display:none;
+                }
+             }
             input {
                 width: 428px;
                 height: 24px;
