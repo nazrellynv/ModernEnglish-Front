@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/scss/style.css">
     <link rel="stylesheet" href="./src/css/owl.carousel.css">
     <link rel="stylesheet" href="./src/css/owl.theme.default.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -200,19 +201,142 @@
                 <h1>Popular Courses</h1>
                 <div class="content"> </div>
                 <div class="category-container">
-                    <div class="category-1">English Programs</div>
-                    <div class="category-2">Kids Programs</div>
-                    <div class="category-2">Languages</div>
-                    <div class="category-2">Online Courses</div>
+                    <div id="ctg1" class="ctg category-active">English Programs</div>
+                    <div id="ctg2" class="ctg category-no-active ">Kids Programs</div>
+                    <div id="ctg3" class="ctg category-no-active ">Languages</div>
+                    <div id="ctg4" class="ctg category-no-active ">Online Courses</div>
                 </div>
             </div>
             <!-- burada justify-content-center olacaq -->
-            <div style="display: flex; justify-content: space-between; ">
+            <div id="ctg1-body" class="ctg-body" style="display: flex; justify-content: space-between; ">
            
                 <div id="card">
                     <div><img class="image-2" src="src/assets/images/1dc9d0eba6873c6f3e61ebe843a977e9.jpg"></div>
                     <div class="information-card">
                         <p class="course-name">General English</p>
+                        <p class="course-information">
+                            General and intensive English courses focus on the core skills of speaking,
+                            listening, reading and writing to improve confidence and increase fluency
+                        </p>
+                    </div>
+
+                </div>
+                <div id="card">
+                    <div><img class="image-2" src="src/assets/images/2c6f6606fedd3d232df8b698b3758545.jpg"></div>
+                    <div class="information-card">
+                        <p class="course-name">IELTS</p>
+                        <p class="course-information">
+                            Our teachers are trained and experienced in getting you
+                            to approach the exams strategically. They will teach you how
+                            to take the exam using a solid methodology that will bring you closer
+                            to your goals.
+                        </p>
+                    </div>
+
+                </div>
+                <div id="card">
+                    <div><img class="image-2" src="src/assets/images/0b80b8cb525388d0d86c876f3a895b2f.jpg"></div>
+                    <div class="information-card">
+                        <p class="course-name">English for Kids</p>
+                        <p class="course-information">
+                            Our English Program for Kids filled with fun activities, games,
+                            songs and worksheets that can help them with their English.
+                            We aim to provide the best resources to make their lesson preparation
+                            a breeze.
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div id="ctg2-body" class="ctg-body" style="display: none; justify-content: space-between; ">
+           
+                <div id="card">
+                    <div><img class="image-2" src="src/assets/images/1dc9d0eba6873c6f3e61ebe843a977e9.jpg"></div>
+                    <div class="information-card">
+                        <p class="course-name">General English-2</p>
+                        <p class="course-information">
+                            General and intensive English courses focus on the core skills of speaking,
+                            listening, reading and writing to improve confidence and increase fluency
+                        </p>
+                    </div>
+
+                </div>
+                <div id="card">
+                    <div><img class="image-2" src="src/assets/images/2c6f6606fedd3d232df8b698b3758545.jpg"></div>
+                    <div class="information-card">
+                        <p class="course-name">IELTS</p>
+                        <p class="course-information">
+                            Our teachers are trained and experienced in getting you
+                            to approach the exams strategically. They will teach you how
+                            to take the exam using a solid methodology that will bring you closer
+                            to your goals.
+                        </p>
+                    </div>
+
+                </div>
+                <div id="card">
+                    <div><img class="image-2" src="src/assets/images/0b80b8cb525388d0d86c876f3a895b2f.jpg"></div>
+                    <div class="information-card">
+                        <p class="course-name">English for Kids</p>
+                        <p class="course-information">
+                            Our English Program for Kids filled with fun activities, games,
+                            songs and worksheets that can help them with their English.
+                            We aim to provide the best resources to make their lesson preparation
+                            a breeze.
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div id="ctg3-body" class="ctg-body" style="display: none; justify-content: space-between; ">
+           
+                <div id="card">
+                    <div><img class="image-2" src="src/assets/images/1dc9d0eba6873c6f3e61ebe843a977e9.jpg"></div>
+                    <div class="information-card">
+                        <p class="course-name">General English-3</p>
+                        <p class="course-information">
+                            General and intensive English courses focus on the core skills of speaking,
+                            listening, reading and writing to improve confidence and increase fluency
+                        </p>
+                    </div>
+
+                </div>
+                <div id="card">
+                    <div><img class="image-2" src="src/assets/images/2c6f6606fedd3d232df8b698b3758545.jpg"></div>
+                    <div class="information-card">
+                        <p class="course-name">IELTS</p>
+                        <p class="course-information">
+                            Our teachers are trained and experienced in getting you
+                            to approach the exams strategically. They will teach you how
+                            to take the exam using a solid methodology that will bring you closer
+                            to your goals.
+                        </p>
+                    </div>
+
+                </div>
+                <div id="card">
+                    <div><img class="image-2" src="src/assets/images/0b80b8cb525388d0d86c876f3a895b2f.jpg"></div>
+                    <div class="information-card">
+                        <p class="course-name">English for Kids</p>
+                        <p class="course-information">
+                            Our English Program for Kids filled with fun activities, games,
+                            songs and worksheets that can help them with their English.
+                            We aim to provide the best resources to make their lesson preparation
+                            a breeze.
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div id="ctg4-body" class="ctg-body" style="display: none; justify-content: space-between; ">
+           
+                <div id="card">
+                    <div><img class="image-2" src="src/assets/images/1dc9d0eba6873c6f3e61ebe843a977e9.jpg"></div>
+                    <div class="information-card">
+                        <p class="course-name">General English-4</p>
                         <p class="course-information">
                             General and intensive English courses focus on the core skills of speaking,
                             listening, reading and writing to improve confidence and increase fluency
@@ -1127,6 +1251,7 @@
             </div>
         </div>
     </footer>
+    <script src="./src/js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./src/js/owl.carousel.js"></script>
     <script src="./src/js/owl.js"></script>
